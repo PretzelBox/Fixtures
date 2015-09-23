@@ -1,0 +1,81 @@
+header {
+  background: #313E4D;
+  color: white;
+  padding: 45px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 88px;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+main {
+  background: #D0D8DD;
+}
+
+main .container {
+  background: white;
+  padding: 30px;
+}
+
+main article:not(:first-child) {
+  border-bottom: 1px solid #252F38;
+}
+
+main article:not(:last-child) {
+  padding-bottom: 30px;
+}
+
+main article h1 {
+  margin: 0;
+}
+
+main article figure {
+  border: 1px solid #DDDDDD;
+  padding: 45px 15px 15px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 0;
+  position: relative;
+}
+
+main article figure:before, main article pre:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  font-weight: bold;
+  color: #959595;
+  font-size: 12px;
+}
+
+main article figure:before {
+  content: 'EXAMPLE';
+}
+
+main article pre:before {
+  content: 'CODE';
+}
+
+main article pre {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: relative;
+}
+
+.hljs {
+    padding: 0;
+    background: none;
+}
+
+
+.small-product {
+  max-width: 300px;
+  margin: auto;
+}

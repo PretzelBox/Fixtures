@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fixtures</title>
+
+    <meta name="description" content="Fixtures is a CSS Component Library for Spark Pay Online Stores">
+
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+    <link rel="stylesheet" href="/assets/css/fixtures.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Fixtures</h1>
+        <h2>CSS Component Library for Spark Pay Online Stores</h2>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <article>
+              <h1>Small Product Display</h1>
+              <p>Used in Search page, Category grid view, and Product Display widgets</p>
+              <figure>
+                <div class="small-product">
+                  <a href="#!" class="thumbnail">
+                    <button class="btn btn-default quick-view" data-href="#!">
+                      Quick View
+                      <span class="hidden product-name">Sample Product - P1</span>
+                    </button>
+                    <img class="CategoryProductThumbnail" src="/assets/img/small-product.jpg" style="border:0;" alt="Sample Product">
+                  </a>
+                  <div class="caption">
+                    <div>
+                      <a class="h5" href="#!">
+                        Sample Product
+                      </a>
+                    </div>
+                    <div>
+                      <div class="price">
+                        <span class="CategoryProductPriceArea">
+                          <span class="CategoryProductPriceLabel">
+                            Price: 
+                          </span>
+                          <span class="CategoryProductPrice">
+                            $1.00
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+              </figure>
+              <pre>
+                <code class="html">
+&lt;div class=&quot;small-product&quot;&gt;
+  &lt;a href=&quot;##ITEMURL##&quot; class=&quot;thumbnail&quot;&gt;
+    &lt;button class=&quot;btn btn-default quick-view&quot; data-href=&quot;##ITEMURL##?previewlayoutname=Product%20Quick%20View&quot;&gt;
+      Quick View
+      &lt;span class=&quot;hidden product-name&quot;&gt;##ITEMNAME## - ##ITEMNR##&lt;/span&gt;
+    &lt;/button&gt;
+    $$THUMBNAIL$$
+    &lt;ac:visibilityarea id=&quot;Featured&quot;&gt;
+      &lt;div class=&quot;flag left top&quot;&gt;
+        &lt;span&gt;
+          Featured!
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/ac:visibilityarea&gt;
+    &lt;ac:visibilityarea id=&quot;Spotlight&quot;&gt;
+      &lt;div class=&quot;flag left bottom&quot;&gt;
+        &lt;span&gt;
+          Spotlight!
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/ac:visibilityarea&gt;
+    &lt;ac:visibilityarea id=&quot;Flag1&quot;&gt;
+      &lt;div class=&quot;flag right top&quot;&gt;
+        &lt;span&gt;
+          New!
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/ac:visibilityarea&gt;
+    &lt;ac:visibilityarea id=&quot;Flag2&quot;&gt;
+      &lt;div class=&quot;flag right bottom&quot;&gt;
+        &lt;span&gt;
+          Hot!
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/ac:visibilityarea&gt;
+    &lt;ac:visibilityarea id=&quot;Flag3&quot;&gt;
+      &lt;div class=&quot;flag right bottom&quot;&gt;
+        &lt;span&gt;
+          Sale!
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/ac:visibilityarea&gt;
+  &lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;div&gt;
+      &lt;a class=&quot;h5&quot; href=&quot;##ITEMURL##&quot;&gt;
+        ##PRODUCTNAME##
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;ac:visibilityarea id=&quot;ltrPrice&quot;&gt;
+        &lt;div class=&quot;price&quot;&gt;
+          $$PRICE$$
+        &lt;/div&gt;
+      &lt;/ac:visibilityarea&gt;
+    &lt;/div&gt;
+    &lt;ac:visibilityarea id=&quot;ProductRatingArdea&quot;&gt;
+      &lt;div class=&quot;review center&quot;&gt;
+        &lt;div class=&quot;review-stars&quot;&gt;
+          $$AVERAGEREVIEWRATINGSTARS$$
+        &lt;/div&gt; 
+        ##IF[ReviewCount!=0]## 
+          &lt;div class=&quot;review-count&quot;&gt;
+            (##REVIEWCOUNT##)
+          &lt;/div&gt; 
+        ##ENDIF##
+      &lt;/div&gt;
+    &lt;/ac:visibilityarea&gt;
+  &lt;/div&gt;  
+&lt;/div&gt;
+                </code>
+              </pre>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+
+
+
+
+

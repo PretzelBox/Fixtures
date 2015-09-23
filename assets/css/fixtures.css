@@ -1,0 +1,137 @@
+/* *********************
+           .btn
+   ********************* */
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+/* *********************
+         end .btn
+   ********************* */
+
+/* *********************
+      .small-product
+   ********************* */
+
+.small-product {
+  margin-bottom: 30px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+
+.small-product .thumbnail {
+  min-height: 260px;
+  line-height: 260px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 4px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.small-product .thumbnail .quick-view {
+  top: 0px;
+  left: 50%;
+  width: 120px;
+  margin-left: -60px;
+  opacity: 0;
+  display: none;
+  transition: 0.25s;
+  z-index: 4;
+  position: absolute;
+}
+
+.small-product .thumbnail:hover .quick-view {
+  top: 100px;
+  display: block;
+  opacity: 1;
+  transition: 0.25s;
+}
+
+.small-product .thumbnail img {
+  display: inline;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.small-product .thumbnail .flag {
+  position: absolute;
+}
+
+.small-product .thumbnail .flag.top {
+  top: 0;
+}
+
+.small-product .thumbnail .flag.right {
+  right: 0;
+}
+
+.small-product .thumbnail .flag.bottom {
+  bottom: 0;
+}
+
+.small-product .thumbnail .flag.left {
+  left: 0;
+}
+
+.small-product .caption {
+  text-align: center;
+}
+
+.small-product .caption .h5 {
+  color: inherit;
+}
+
+.small-product .caption .h5:hover, .small-product .caption .h5:focus {
+  color: #2a6496
+}
+
+.small-product .price {
+  color: #777;
+  display: inline-block;
+}
+
+.small-product .review .review-stars, .small-product .review .review-count {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* ********************
+    end .small-product
+   ******************** */
